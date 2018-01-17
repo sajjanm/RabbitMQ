@@ -15,10 +15,12 @@ import com.rabbitmq.client.ConnectionFactory;
 
 public class Send {
 
+    // Defining the name of the queue;
     private final static String QUEUE_NAME = "helloQueueName";
 
     public static void main(String[] argv) throws Exception {
         
+        //Setting up the connection factory and it will be followed by the connection
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         Connection connection = factory.newConnection();

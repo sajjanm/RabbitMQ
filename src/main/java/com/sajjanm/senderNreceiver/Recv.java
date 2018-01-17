@@ -15,6 +15,7 @@ import java.io.IOException;
 
 public class Recv {
 
+    // Same name of the queue must be used here for listening
     private final static String QUEUE_NAME = "helloQueueName";
 
     public static void main(String[] argv) throws Exception {
